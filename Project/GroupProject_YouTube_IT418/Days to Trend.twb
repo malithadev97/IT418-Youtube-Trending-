@@ -1,0 +1,554 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0213.2333                               -->
+<workbook original-version='18.1' source-build='2019.1.0 (20191.19.0213.2333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='USvideos (USvideosFixed)' inline='true' name='federated.1qqj1ec0fce6mj17bso1q0gge5p7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='USvideosFixed' name='excel-direct.0k3qsag0gx7dlk1773lyn08ehbh5'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Malitha/Desktop/IT418/Project/Dataset/Sorted Music Videos/Date Fixed/USvideosFixed.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0k3qsag0gx7dlk1773lyn08ehbh5' name='USvideos' table='[USvideos$]' type='table'>
+          <columns gridOrigin='A1:P10001:no:A1:P10001:0' header='yes' outcome='6'>
+            <column datatype='string' name='video_id' ordinal='0' />
+            <column datatype='date' name='trending_date' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='channel_title' ordinal='3' />
+            <column datatype='integer' name='category_id' ordinal='4' />
+            <column datatype='date' name='publish_time' ordinal='5' />
+            <column datatype='string' name='tags' ordinal='6' />
+            <column datatype='integer' name='views' ordinal='7' />
+            <column datatype='integer' name='likes' ordinal='8' />
+            <column datatype='integer' name='dislikes' ordinal='9' />
+            <column datatype='integer' name='comment_count' ordinal='10' />
+            <column datatype='string' name='thumbnail_link' ordinal='11' />
+            <column datatype='boolean' name='comments_disabled' ordinal='12' />
+            <column datatype='boolean' name='ratings_disabled' ordinal='13' />
+            <column datatype='boolean' name='video_error_or_removed' ordinal='14' />
+            <column datatype='string' name='description' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>video_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[video_id]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>video_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trending_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[trending_date]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>trending_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[channel_title]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>channel_title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[category_id]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>category_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publish_time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[publish_time]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>publish_time</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tags]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>tags</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>views</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[views]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>views</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dislikes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dislikes]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>dislikes</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comment_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comment_count]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>comment_count</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail_link</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[thumbnail_link]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>thumbnail_link</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comments_disabled</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[comments_disabled]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>comments_disabled</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ratings_disabled</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[ratings_disabled]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>ratings_disabled</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_error_or_removed</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[video_error_or_removed]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>video_error_or_removed</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[USvideos]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P10001:no:A1:P10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Trending Time' datatype='integer' name='[Calculation_2704693103203729410]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[trending_date] - [publish_time]' />
+      </column>
+      <column caption='Number of days to Trend' datatype='integer' name='[Calculation_2704693103208464388]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[trending_date] - [publish_time]' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Category Id' datatype='integer' name='[category_id]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='1' value='Film &amp; Animation' />
+          <alias key='2' value='Autos &amp; Vehicles' />
+          <alias key='10' value='Music' />
+          <alias key='15' value='Pets &amp; Animals' />
+          <alias key='17' value='Sports' />
+          <alias key='19' value='Travel &amp; Events' />
+          <alias key='20' value='Gaming' />
+          <alias key='22' value='People and Blogs' />
+          <alias key='23' value='Comedy' />
+          <alias key='24' value='Entertainment' />
+          <alias key='25' value='News &amp; Politics' />
+          <alias key='26' value='Howto &amp; Style' />
+          <alias key='27' value='Education' />
+          <alias key='28' value='Science &amp; Technology' />
+          <alias key='29' value='Nonprofits &amp; Activism' />
+          <alias key='43' value='Shows' />
+        </aliases>
+      </column>
+      <column caption='Channel Title' datatype='string' name='[channel_title]' role='dimension' type='nominal' />
+      <column caption='Comment Count' datatype='integer' name='[comment_count]' role='measure' type='quantitative' />
+      <column caption='Comments Disabled' datatype='boolean' name='[comments_disabled]' role='dimension' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+      <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+      <column caption='Publish Time' datatype='date' name='[publish_time]' role='dimension' type='ordinal' />
+      <column caption='Ratings Disabled' datatype='boolean' name='[ratings_disabled]' role='dimension' type='nominal' />
+      <column caption='Tags' datatype='string' name='[tags]' role='dimension' type='nominal' />
+      <column caption='Thumbnail Link' datatype='string' name='[thumbnail_link]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Trending Date' datatype='date' name='[trending_date]' role='dimension' type='ordinal' />
+      <column caption='Video Error Or Removed' datatype='boolean' name='[video_error_or_removed]' role='dimension' type='nominal' />
+      <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+      <column caption='Views' datatype='integer' name='[views]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.593199' measure-ordering='alphabetic' measure-percentage='0.406801' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='20'>Days to Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='USvideos (USvideosFixed)' name='federated.1qqj1ec0fce6mj17bso1q0gge5p7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qqj1ec0fce6mj17bso1q0gge5p7'>
+            <column caption='Number of days to Trend' datatype='integer' name='[Calculation_2704693103208464388]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[trending_date] - [publish_time]' />
+            </column>
+            <column-instance column='[Calculation_2704693103208464388]' derivation='Avg' name='[avg:Calculation_2704693103208464388:qk]' pivot='key' type='quantitative' />
+            <column caption='Category Id' datatype='integer' name='[category_id]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='1' value='Film &amp; Animation' />
+                <alias key='2' value='Autos &amp; Vehicles' />
+                <alias key='10' value='Music' />
+                <alias key='15' value='Pets &amp; Animals' />
+                <alias key='17' value='Sports' />
+                <alias key='19' value='Travel &amp; Events' />
+                <alias key='20' value='Gaming' />
+                <alias key='22' value='People and Blogs' />
+                <alias key='23' value='Comedy' />
+                <alias key='24' value='Entertainment' />
+                <alias key='25' value='News &amp; Politics' />
+                <alias key='26' value='Howto &amp; Style' />
+                <alias key='27' value='Education' />
+                <alias key='28' value='Science &amp; Technology' />
+                <alias key='29' value='Nonprofits &amp; Activism' />
+                <alias key='43' value='Shows' />
+              </aliases>
+            </column>
+            <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+            <column-instance column='[category_id]' derivation='None' name='[none:category_id:ok]' pivot='key' type='ordinal' />
+            <column caption='Publish Time' datatype='date' name='[publish_time]' role='dimension' type='ordinal' />
+            <column-instance column='[likes]' derivation='Sum' name='[sum:likes:qk]' pivot='key' type='quantitative' />
+            <column caption='Trending Date' datatype='date' name='[trending_date]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[sum:likes:qk]' included-values='in-range'>
+            <min>0</min>
+          </filter>
+          <slices>
+            <column>[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[sum:likes:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[avg:Calculation_2704693103208464388:qk]</rows>
+        <cols>[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[none:category_id:ok]</cols>
+      </table>
+      <simple-id uuid='{90F2840C-35ED-4BE9-90FD-1E7A0D8A5F44}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='159'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[sum:likes:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[none:Calculation_2704693103208194051:qk]</field>
+            <field>[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[none:Calculation_2704693103208464388:qk]</field>
+            <field>[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[none:category_id:ok]</field>
+            <field>[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[none:channel_title:nk]</field>
+            <field>[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[none:tags:nk]</field>
+            <field>[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[none:title:nk]</field>
+            <field>[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[yr:publish_time:ok]</field>
+            <field>[federated.1qqj1ec0fce6mj17bso1q0gge5p7].[yr:trending_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2B8EC1A6-25A6-4D84-BBA8-5B2C9A4CE65F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
